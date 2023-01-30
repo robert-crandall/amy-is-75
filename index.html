@@ -23,15 +23,15 @@
     <video id="azuremediaplayer" class="azuremediaplayer amp-default-skin amp-big-play-centered" tabindex="0"> </video>
     <script>
         var myOptions = {
-            autoplay: true,
+            autoplay: false,
             controls: true,
-            width: "640",
-            height: "400",
+            width: "1280",
+            height: "720",
             poster: ""
         };
         var myPlayer = amp("azuremediaplayer", myOptions);
-        myPlayer.src([{ src: "//cdnstreaming-mediaservices-usw31.streaming.media.azure.net/18d1050c-435a-4d29-8276-11f3a6d673f1/Amy's Seventy Fifth Year.ism/manifest(format=m3u8-cmaf)", type: "application/vnd.ms-sstr+xml" }]);
+        myPlayer.src([{ src: "//cdnstreaming-mediaservices-usw31.streaming.media.azure.net/18d1050c-435a-4d29-8276-11f3a6d673f1/Amy's Seventy Fifth Year.ism/manifest(format=m3u8-cmaf)", type: "application/vnd.ms-sstr+xml" },
+                        { src: "//cdnstreaming-mediaservices-usw31.streaming.media.azure.net/cb2c914e-709b-4e57-ba99-0e10b24e7df0/Amy's Seventy Fifth Year.ism/manifest(format=m3u8-cmaf)", type: "application/vnd.ms-sstr+xml" }]);    
     </script>
-
 </body>
 </html>
